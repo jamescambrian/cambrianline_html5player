@@ -1,3 +1,16 @@
+//controls the scroller
+@mixin scroll-x-transition ($scroll-transition) {
+-webkit-transition: $scroll-transition;
+-moz-transition: $scroll-transition;
+transition: $scroll-transition;     
+}
+@mixin scroll-x-timing ($scroll-timing) {
+-webkit-transition-timing-function: $scroll-timing;
+-moz-transition-timing-function: $scroll-timing;
+transition-timing-function: $scroll-timing;
+}
+
+
 //dark maxi player
 
 #player__playlist--dark{
@@ -73,6 +86,7 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+
                 &.active {
                 font-weight: 700;
                 opacity: 1;
@@ -180,6 +194,11 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            @include scroll-x-transition(2.5s);
+            @include scroll-x-timing(linear);
+            &:hover{margin-left:-100%;}
+
+            // display:inline-block;
                 &.active {
                 font-weight: bold;
                 opacity: 1;
@@ -429,6 +448,9 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            @include scroll-x-transition(2.5s);
+            @include scroll-x-timing(linear);
+            &:hover{margin-left:-100%;}
                 &.active {
                 font-weight: 400;
                 opacity: 1;

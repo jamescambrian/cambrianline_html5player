@@ -640,7 +640,15 @@ a.underline {
       line-height: 1.8rem;
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      -webkit-transition: 2.5s;
+      -moz-transition: 2.5s;
+      transition: 2.5s;
+      -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+      transition-timing-function: linear; }
+      #player__mini--dark #player--playlist li:hover {
+        margin-left: -100%; }
       #player__mini--dark #player--playlist li.active {
         font-weight: bold;
         opacity: 1; }
@@ -827,7 +835,15 @@ a.underline {
       line-height: 1.8rem;
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      -webkit-transition: 2.5s;
+      -moz-transition: 2.5s;
+      transition: 2.5s;
+      -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+      transition-timing-function: linear; }
+      #player__mini--light #player--playlist li:hover {
+        margin-left: -100%; }
       #player__mini--light #player--playlist li.active {
         font-weight: 400;
         opacity: 1; }
