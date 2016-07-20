@@ -635,7 +635,7 @@ a.underline {
       font-family: "Lato", sans-serif;
       color: white;
       cursor: pointer;
-      opacity: 0.7;
+      font-weight: 400;
       padding: 0;
       line-height: 1.8rem;
       overflow: hidden;
@@ -649,9 +649,6 @@ a.underline {
       transition-timing-function: linear; }
       #player__mini--dark #player--playlist li:hover {
         margin-left: -100%; }
-      #player__mini--dark #player--playlist li.active {
-        font-weight: bold;
-        opacity: 1; }
   #player__mini--dark .playlist__container {
     width: 85%;
     float: left;
@@ -830,7 +827,7 @@ a.underline {
       font-family: "Lato", sans-serif;
       color: #231f20;
       cursor: pointer;
-      opacity: 0.7;
+      font-weight: 400;
       padding: 0;
       line-height: 1.8rem;
       overflow: hidden;
@@ -844,9 +841,6 @@ a.underline {
       transition-timing-function: linear; }
       #player__mini--light #player--playlist li:hover {
         margin-left: -100%; }
-      #player__mini--light #player--playlist li.active {
-        font-weight: 400;
-        opacity: 1; }
   #player__mini--light .playlist__container {
     width: 85%;
     float: left;
